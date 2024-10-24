@@ -86,3 +86,19 @@ ashu.py
 
 <img src="dashb.png">
 
+### Processing Monitoring control 
+
+<img src="procmon.png">
+
+### enable process scrub in datadog yaml 
+
+```
+process_config:
+  enable: true
+  scrub_args: true # only when we want to add additional sensitive keyword list
+  custom_sensitive_words: ['--type*', '--field-trial-handle', 'sql*', '*pass*d*']
+## @param dd_url - string - optional - default: https://app.datadoghq.com
+## @env DD_DD_URL - string - optional - default: https://app.datadoghq.com
+## @env DD_URL - string - optional - default: https://app.datadoghq.com
+
+```
