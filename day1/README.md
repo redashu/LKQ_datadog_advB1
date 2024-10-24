@@ -73,3 +73,11 @@ WARNING: Running pip as the 'root' user can result in broken permissions and con
 
 ## lets change code to generate metrics as well
 
+```
+[oot@ip-172-31-92-124 pyappnew]# ls
+ashu.py
+[root@ip-172-31-92-124 pyappnew]# >ashu.py 
+[root@ip-172-31-92-124 pyappnew]# nano ashu.py 
+[root@ip-172-31-92-124 pyappnew]# 
+
+```
