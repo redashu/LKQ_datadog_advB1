@@ -81,3 +81,8 @@ ashu.py
 [root@ip-172-31-92-124 pyappnew]# 
 
 ```
+
+### Dashobards in one Go 
+
+<img src="dashb.png">
+
