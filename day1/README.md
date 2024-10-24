@@ -101,4 +101,10 @@ process_config:
 ## @env DD_DD_URL - string - optional - default: https://app.datadoghq.com
 ## @env DD_URL - string - optional - default: https://app.datadoghq.com
 
+
+=== disable entire process scrubing 
+strip_proc_args: false
+  blacklist:
+  - name: "zoom"
+  - name: "msteams"
 ```
