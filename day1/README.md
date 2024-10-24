@@ -45,3 +45,31 @@ mkdir /opt/pyappnew
 
 ===> creating app
 nano ashu.py 
+```
+
+### to generate Custom metrics by datadog -- checklist 
+
+<img src="check.png">
+
+[clickHERE_forMoreInfo](https://docs.datadoghq.com/metrics/custom_metrics/dogstatsd_metrics_submission/)
+
+### Installing datadog Libs to generate custom metrics by python code
+
+```
+pip install --upgrade datadog 
+Collecting datadog
+  Downloading datadog-0.50.1-py2.py3-none-any.whl (119 kB)
+     |████████████████████████████████| 119 kB 7.0 MB/s            
+Requirement already satisfied: requests>=2.6.0 in /usr/lib/python3.9/site-packages (from datadog) (2.25.1)
+Requirement already satisfied: chardet<5,>=3.0.2 in /usr/lib/python3.9/site-packages (from requests>=2.6.0->datadog) (4.0.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/lib/python3.9/site-packages (from requests>=2.6.0->datadog) (1.25.10)
+Requirement already satisfied: idna<3,>=2.5 in /usr/lib/python3.9/site-packages (from requests>=2.6.0->datadog) (2.10)
+Installing collected packages: datadog
+Successfully installed datadog-0.50.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[root@ip-172-31-92-124 pyappnew]# 
+
+```
+
+## lets change code to generate metrics as well
+
