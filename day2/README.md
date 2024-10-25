@@ -194,3 +194,36 @@ mysql -u datadog  -p'datadog_password'    -e "show status"
 
 ```
 
+### datadog integration 
+
+```
+ cd /etc/datadog-agent/conf.d/mysql.d/
+[root@ip-172-31-92-124 mysql.d]# ls
+conf.yaml.example
+[root@ip-172-31-92-124 mysql.d]# nano  ashudb.yaml  
+
+
+
+init_config:
+
+instances:
+  - host: 127.0.0.1
+    username: datadog
+    password: "datadog_password"
+    port: 3306
+    options:
+      replication: false
+      galera_cluster: true
+      extra_status_metrics: true
+      extra_innodb_metrics: true
+      schema_size_metrics: false
+      disable_innodb_metrics: false
+```
+
+### data config check and restart 
+
+```
+349  datadog-agent configcheck
+  350  systemctl restart datadog-agent
+
+```
